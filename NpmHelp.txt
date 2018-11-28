@@ -1,0 +1,6 @@
+*****************************************************************
+ NPM Install vs Update
+*****************************************************************
+	In package.json there are numerous ways to specify versioning
+	'~1.2.3'	the '~'	will match the most recent minor version (middle number)
+	'^1.2.3'	the '^' will match any release including 1.9.0 but will NOT install 2.0.1
