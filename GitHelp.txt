@@ -1,0 +1,53 @@
+*****************************************************************
+ When you want to clone a gitHub repository 
+*****************************************************************
+	1. 	Ctrl+Shift+P and select git:clone
+	2. 	Enter the repo url.
+	3. 	Pick a folder to clone the repo to
+		NOTE: my example is C:\Projects\GitRepositories notice I did not specify a 
+		specific folder. The folder will be created for you during the clone.
+
+
+*****************************************************************
+ When you want to check in your work run the following:
+*****************************************************************
+	git add .		Stage your work the '.' means stage everthing(new, modified, deleted)
+	git commit -m	Commit your changes locally -m is to add a message i.e. comment
+	git push		Push all your changes to GitHub
+
+*****************************************************************
+ When you want to check to see your local changes
+*****************************************************************
+	git status		Lets you see what your local changes are
+
+
+	git pull		Git tries to automatically do your work for you.
+					It is context sensitive, so Git will merge any pulled commits into the 
+					branch you are currently working in.  pull automatically merges the commits 
+					without letting you review them first. 
+					If you don’t closely manage your branches, you may run into frequent conflicts.
+	git fetch		Git gathers any commits from the target branch that do not exist in your
+					current branch and stores them in your local repository. 
+					However, it does not merge them with your current branch. 
+					This is particularly useful if you need to keep your repository up to date,
+					but are working on something that might break if you update your files.
+					To integrate the commits into your master branch, you use merge	
+
+*****************************************************************
+ When you want to duplicate a repository
+ This is useful if you want to use your template repo as a starter
+*****************************************************************
+	1. 	Make sure your template has all the latest changes locally.
+	2. 	Create your new repo in another folder.
+	3. 	Copy everything from your template repo except the .git folder
+		to the new repo
+	4. 	Push to the new repo on GitHub
+	
+*****************************************************************
+ NPM Install vs Update
+*****************************************************************
+	In package.json there are numerous ways to specify versioning
+	'~1.2.3'	the '~'	will match the most recent minor version (middle number)
+	'^1.2.3'	the '^' will match any release including 1.9.0 but will NOT install 2.0.1
+	
+
