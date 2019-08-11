@@ -21,6 +21,11 @@
 	git status		Lets you see what your local changes are
 
 
+*****************************************************************
+ When you want to get changes from master
+*****************************************************************
+	git pull --tags origin master
+
 	git pull		Git tries to automatically do your work for you.
 					It is context sensitive, so Git will merge any pulled commits into the 
 					branch you are currently working in.  pull automatically merges the commits 
