@@ -1,0 +1,40 @@
+Question for recruiters
+------------------------------
+In the jobs that I will be applying for do you think its better to study data structures, leetcode, FAANG stuff, or study c#
+
+Question for mentors
+------------------------------
+In my new position day to day responsibilities are as follows:
+    Role and responsibility
+        Team Lead/Manager Vendor Services
+        I am responsible and accountable for all services which talk to 3rd party vendors.
+        I am responsible and accountable for several batch applications which process data from 3rd party vendors.
+
+    Software Development Life Cycle (SDLC)
+        Planning
+            Responsible for defining and documenting product roadmaps.
+            Fielding general questions from users, stakeholders, and other persons.
+            Meeting with users, stakeholders, and leadership to understand incoming requests and prioritize them.
+            Decomposing feature requirements into Epics/Features/Work Items.
+            Provide estimates to stakeholders and leadership.
+            Work with scrum master to plan sprints.
+            Work with development team to task and size work.
+
+        Development
+            Code small features and bug fixes.
+            Architect and design larger features.
+            Code reviews.
+            Assist with testing if necessary.
+            Create documentation for project management, scrum masters, and stakeholders.
+
+        Release Management
+            Determine what work items are going to production.
+            Create release documentation for scrum master and stakeholders.
+            Create releases via Azure DevOps.
+            Available during release to support any issues.
+
+        Post Deployment Support
+            Monitor and respond to production support issues.
+            Triage incoming production issues to understand what solutions are required.
+
+
