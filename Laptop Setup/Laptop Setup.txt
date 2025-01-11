@@ -1,0 +1,74 @@
+General
+    1.  Update your local package index.
+           sudo apt update
+
+Install VSCode
+    sudo snap install --classic code # or code-insiders
+    
+Install Git
+    sudo apt install git
+
+
+Configure Git
+-----------------------------------------------------------------------------------------
+    Run the following commands
+        git config --global user.name "Ron Skufca"
+        git config --global user.email "ron.skufca@gmail.com"
+        git config --global alias.smartlog "log -20 --pretty=format:'%Cred%h%Creset %C(bold blue)%an%Creset %Cgreen%cr%Creset %s%C(bold red)%d%Creset'"
+        git config --global alias.rv 'remote -v'
+        git config --global core.editor "code --wait"
+        git config --global init.defaultBranch master
+        git config --global fetch.prune true
+        git config --global core.autocrlf input
+        git config --global status.short true
+        git config --global alias.conf "config --list --show-origin"
+
+    Setup SSH Key Run The Following In A Terminal
+        1.  ssh-keygen -t rsa -b 4096 -C "ron.skufca@gmail.com"
+            passphrase: "ToCodeOrNotToCode"
+        
+        The generated output is this:
+        fingerprint: SHA256:eryU7ifPNp5ygP0JgJ70JKkatiPJyaNAQQ6dQ28TkcE ron.skufca@gmail.com
+        Two files will be created:
+            githubssh.txt
+            githubssh.txt.pub
+        2.  Add the SSH private key to the ssh-agent using the following command:
+            ssh-add githubssh.txt
+
+        3.  Open the githubssh.txt.pub and copy the contents into GitHub
+
+apt
+-----------------------------------------------------------------------------------------
+    Is a command-line utility for installing, updating, removing, and otherwise managing deb packages 
+    on Ubuntu, Debian, and related Linux distributions. 
+    It combines the most frequently used commands from the apt-get and apt-cache tools with 
+    different default values of some options.
+
+    Regularly updating your Linux system is one of the most important aspects of overall system security.
+    To upgrade the installed packages to their latest versions run:
+        sudo apt upgrade
+
+    If you want to upgrade a single package, pass the package name:
+        sudo apt upgrade {package_name}
+
+    Installing packages is as simple as running the following command:
+        sudo apt install {package_name}
+
+    To remove an installed package type the following:
+        sudo apt remove {package_name}
+
+    Whenever a new package that depends on other packages is installed on the system, 
+    the package dependencies will be installed too. When the package is removed, 
+    the dependencies will stay on the system. This leftover packages are no longer used by 
+    anything else and can be removed.
+    To remove the unneeded dependencies use the following command:
+        sudo apt autoremove
+
+    The list command allows you to list the available, installed and, upgradeable packages.
+    To list all available packages use the following command:
+        sudo apt list        
+
+    The information about the package dependencies, installation size, the package source, and 
+    so on might be useful before removing or installing a new package.
+    To retrieve information about a given package, use the show command:
+        sudo apt show package_name
