@@ -8,7 +8,6 @@ Install VSCode
 Install Git
     sudo apt install git
 
-
 Configure Git
 -----------------------------------------------------------------------------------------
     Run the following commands
