@@ -24,17 +24,17 @@ Configure Git
 
     Setup SSH Key Run The Following In A Terminal
         1.  ssh-keygen -t rsa -b 4096 -C "ron.skufca@gmail.com"
-            passphrase: "ToCodeOrNotToCode"
+            passphrase: "ronskufca"
         
         The generated output is this:
         fingerprint: SHA256:eryU7ifPNp5ygP0JgJ70JKkatiPJyaNAQQ6dQ28TkcE ron.skufca@gmail.com
         Two files will be created:
-            githubssh.txt
-            githubssh.txt.pub
+            sshkey.txt
+            sshkey.pub
         2.  Add the SSH private key to the ssh-agent using the following command:
-            ssh-add githubssh.txt
+            ssh-add sshkey.txt
 
-        3.  Open the githubssh.txt.pub and copy the contents into GitHub
+        3.  Open the sshkey.txt.pub and copy the contents into GitHub
 
 apt
 -----------------------------------------------------------------------------------------
