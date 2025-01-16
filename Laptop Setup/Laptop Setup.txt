@@ -27,14 +27,15 @@ Configure Git
             passphrase: "ronskufca"
         
         The generated output is this:
-        fingerprint: SHA256:eryU7ifPNp5ygP0JgJ70JKkatiPJyaNAQQ6dQ28TkcE ron.skufca@gmail.com
+        fingerprint: SHA256:bnVgx2CbvUAVo2xyP31NjabE6WJJoqFSWftLqnt8/mM ron.skufca@gmail.com
         Two files will be created:
             sshkey.txt
             sshkey.pub
-        2.  Add the SSH private key to the ssh-agent using the following command:
-            ssh-add sshkey.txt
 
-        3.  Open the sshkey.txt.pub and copy the contents into GitHub
+        2.  Add the SSH private key to the ssh-agent using the following command:
+            ssh-add sshkey
+
+        3.  Open the sshkey.pub and copy the contents into GitHub
 
 apt
 -----------------------------------------------------------------------------------------
