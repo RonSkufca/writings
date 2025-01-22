@@ -1,0 +1,25 @@
+Jekyll Cheat Sheet
+---------------------------------
+	jekyll build or b		■	Performs a one off build your site to ./_site (by default).
+	jekyll serve or s		■	Builds your site any time a source file changes and serves it locally.
+				--livereload 	■	Force the browser to refresh with each change.
+				--draft			■	Will build any pages which are in the _drafts folder
+
+	bundle install	■	Tells Jekyll to go out and install all of the gem's inside the Gemfile
+						very similar to the json file in the vue projects.
+				
+	objects:	tell Liquid to output predefined variables as content on a page. 
+				Usage {{ page.title }}
+	
+	tags:		define the logic and control flow for templates.
+				Usage: {% if something %}
+		
+		include:	allows you to include content from another file stored in a _includes folder
+					this is useful when you want a single source for code that repeats throught the sight.
+
+	
+	filters:	change the output of a Liquid object
+	
+	
+	content:	is a special variable that returns the rendered content of the page on which it is called.
+	

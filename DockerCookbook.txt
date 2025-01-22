@@ -1,0 +1,17 @@
+To Build, create or re-create, start, and attach to containers for a service.
+The big advantage of using Compose is you can define your application stack in a file, keep it at the root of your project repo
+	docker-compose up -d 	
+		-d : Detached mode: Run containers in the background
+		This will look for a .yml file in the current directory	
+	
+To List Containers
+	docker ps 		(shows just running containers)
+	docker ps -all 	(shows all containers)
+	
+To return low-level information on Docker objects
+	docker inspect {containerID}
+	
+To run a command in a docker container
+	docker exec -i composedev-mysqld-1
+		-i (interactive keep STDIN open even if not attached)
+		composedev-mysqld-1 (found by running the docker ps and copying the name of the container)
