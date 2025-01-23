@@ -2,6 +2,10 @@ General
     1.  Update your local package index.
            sudo apt update
 
+Install Firefox
+    firefox --version
+    sudo snap refresh firefox
+
 Install VSCode
     sudo snap install --classic code # or code-insiders
     
