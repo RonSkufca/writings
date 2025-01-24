@@ -40,11 +40,13 @@ Configure Git
         The generated output is this:
         fingerprint: SHA256:bnVgx2CbvUAVo2xyP31NjabE6WJJoqFSWftLqnt8/mM ron.skufca@gmail.com
         Two files will be created:
-            sshkey.txt
+            sshkey
             sshkey.pub
 
         2.  Add the SSH private key to the ssh-agent using the following command:
             ssh-add sshkey
+            If you get the Permissions 0664 for 'sshkey' are too open error, then run the chmod command below
+            chmod 600 sshkey
 
         3.  Open the sshkey.pub and copy the contents into GitHub
 
