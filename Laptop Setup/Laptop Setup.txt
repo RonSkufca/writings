@@ -50,6 +50,13 @@ Configure Git
 
         3.  Open the sshkey.pub and copy the contents into GitHub
 
+Configure Remmina RDP Client
+-----------------------------------------------------------------------------------------
+    server: 192.168.50.57
+    username: ron
+    password: changeme
+
+
 apt
 -----------------------------------------------------------------------------------------
     Is a command-line utility for installing, updating, removing, and otherwise managing deb packages 
