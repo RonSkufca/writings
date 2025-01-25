@@ -93,6 +93,8 @@ apt
     To retrieve information about a given package, use the show command:
         sudo apt show package_name
 
+Kernel: Linux 6.8.0-40-generic
+
 Display
 ----------------------------------------------------------------------------------------
     results of sudo lshw -c display
@@ -114,5 +116,24 @@ Display
 
     Processor:   AMD® Ryzen 7 pro 7840u w/ radeon 780m graphics × 16
     Graphics:    GFX1103_R1 (gfx1103_r1, LLVM 15.0.7, DRM 3.57, 6.8.0-40-generic)
+                 integrated RDNA3 graphics
     GPU:         AMD Radeon 780M
 
+    results of LANG=C inxi -Fxxxrzc0 --usb
+        Device-1: AMD vendor: Lenovo driver: amdgpu v: kernel pcie: speed: 16 GT/s
+            lanes: 16 ports: active: DP-1,eDP-1
+            empty: DP-2, DP-3, DP-4, DP-5, DP-6, HDMI-A-1, Writeback-1
+            bus-ID: 64:00.0 chip-ID: 1002:15bf class-ID: 0300
+        Device-2: Chicony Integrated Camera type: USB driver: uvcvideo
+            bus-ID: 3-1:2 chip-ID: 04f2:b7c0 class-ID: fe01 serial: <filter>
+        Display: wayland server: X.org v: 1.21.1.4 with: Xwayland v: 22.1.1
+            compositor: gnome-shell driver: gpu: amdgpu display-ID: 0
+        Monitor-1: DP-1 model: Dell U3421WE serial: <filter> res: 3440x1440
+            dpi: 109 size: 800x335mm (31.5x13.2") diag: 867mm (34.1") modes:
+            max: 3440x1440 min: 720x400
+        Monitor-2: eDP-1 model: AU Optronics res: 1920x1200 dpi: 142
+            size: 344x215mm (13.5x8.5") diag: 406mm (16") modes: max: 1920x1200
+            min: 640x480
+        OpenGL:
+            renderer: GFX1103_R1 (gfx1103_r1 LLVM 15.0.7 DRM 3.57 6.8.0-40-generic)
+            v: 4.6 Mesa 23.2.1-1ubuntu3.1~22.04.2 direct render: Yes
