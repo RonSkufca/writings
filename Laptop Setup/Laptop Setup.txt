@@ -92,3 +92,27 @@ apt
     so on might be useful before removing or installing a new package.
     To retrieve information about a given package, use the show command:
         sudo apt show package_name
+
+Display
+----------------------------------------------------------------------------------------
+    results of sudo lshw -c display
+           description: VGA compatible controller
+           product: Advanced Micro Devices, Inc. [AMD/ATI]
+           vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+           physical id: 0
+           bus info: pci@0000:64:00.0
+           logical name: /dev/fb0
+           version: dd
+           width: 64 bits
+           clock: 33MHz
+           capabilities: pm pciexpress msi msix vga_controller bus_master cap_list fb
+           configuration: depth=32 driver=amdgpu latency=0 mode=1920x1200 resolution=3440,1440 visual=truecolor xres=1920 yres=1200
+           resources: iomemory:1c0-1bf irq:43 memory:1c00000000-1c0fffffff memory:78000000-781fffff ioport:1000(size=256)                     memory:78500000-7857ffff
+
+    results of sudo lspci | grep VGA
+        64:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Device 15bf (rev dd)
+
+    Processor:   AMD® Ryzen 7 pro 7840u w/ radeon 780m graphics × 16
+    Graphics:    GFX1103_R1 (gfx1103_r1, LLVM 15.0.7, DRM 3.57, 6.8.0-40-generic)
+    GPU:         AMD Radeon 780M
+
