@@ -39,7 +39,7 @@ Configure Git
         
         The generated output is this:
         fingerprint: SHA256:bnVgx2CbvUAVo2xyP31NjabE6WJJoqFSWftLqnt8/mM ron.skufca@gmail.com
-        Two files will be created:
+        Two files will be created. These files are in this repo. Download them and copy to home/ron/.ssh
             sshkey
             sshkey.pub
 
