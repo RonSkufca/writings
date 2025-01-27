@@ -141,3 +141,5 @@ Display
 We are going to attempt to update the amdgpu drivers.
 1.  Download the adeon™ Pro Software for Enterprise on Ubuntu 22.04.5 Installer
     amdgpu-install_6.2.60204-1_all.deb from here: https://www.amd.com/en/support/download/linux-drivers.html
+
+https://idroot.us/install-amd-radeon-driver-ubuntu-24-04/
