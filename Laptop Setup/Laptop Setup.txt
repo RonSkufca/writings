@@ -137,3 +137,7 @@ Display
         OpenGL:
             renderer: GFX1103_R1 (gfx1103_r1 LLVM 15.0.7 DRM 3.57 6.8.0-40-generic)
             v: 4.6 Mesa 23.2.1-1ubuntu3.1~22.04.2 direct render: Yes
+
+We are going to attempt to update the amdgpu drivers.
+1.  Download the adeon™ Pro Software for Enterprise on Ubuntu 22.04.5 Installer
+    amdgpu-install_6.2.60204-1_all.deb from here: https://www.amd.com/en/support/download/linux-drivers.html
