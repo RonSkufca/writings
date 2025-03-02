@@ -7,6 +7,9 @@ Install Firefox
 
 Install VSCode
     sudo snap install --classic code
+
+Install Rider
+    sudo snap install rider --classic
     
 Install Git
     sudo apt install git
