@@ -22,6 +22,19 @@ Disable the Ubuntu boot splash screen
 Install Timeshift
     sudo apt install timeshift
 
+Configure Alias in .bashrc
+-----------------------------------------------------------------------------------------
+    alias ll='ls -alF'
+    alias la='ls -A'
+    alias l='ls -CF'
+    alias ga='git add -A'
+    alias gcm='git commit -m'
+    alias gp='git pull'
+    alias gb='git branch'
+    alias gpo='git pull origin'
+    alias gpsh='git push'
+    alias glog="log -20 --pretty=format:'%Cred%h%Creset %C(bold blue)%an%Creset %Cgreen%cr%Creset %s%C(bold red)%d%Creset'"
+
 Configure Git
 -----------------------------------------------------------------------------------------
     Run the following commands
