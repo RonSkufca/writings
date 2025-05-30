@@ -17,6 +17,9 @@ Install Git
 Install Timeshift
     sudo apt install timeshift
 
+Install Slack
+    sudo snap install slack --classic
+
 Configure Alias in .bashrc
 -----------------------------------------------------------------------------------------
     alias ll='ls -alF'
