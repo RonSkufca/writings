@@ -14,11 +14,6 @@ Install Rider
 Install Git
     sudo apt install git
 
-Disable the Ubuntu boot splash screen
-    sudo nano /etc/default/grub
-    Change the following to GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
-    sudo update-grub
-
 Install Timeshift
     sudo apt install timeshift
 
