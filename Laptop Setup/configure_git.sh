@@ -24,3 +24,14 @@ chmod 600 sshkey
 ssh-add sshkey
 ssh-add -l
 echo "Successfully installed sshkey"
+
+cd ~
+cd Code
+echo "Cloning Repo blue sky consulting"
+git clone git@github.com:RonSkufca/software-consulting-website.git
+
+echo "Cloning Repo CSharpKaizen"
+git clone git@github.com:RonSkufca/CSharpKaizen.git
+
+echo "Cloning Writings"
+git clone git@github.com:RonSkufca/writings.git
