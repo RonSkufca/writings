@@ -16,3 +16,11 @@ git config --global alias.conf "config --list --show-origin"
 echo "Successfully Updated git global config"
 
 git config --list --show-origin
+
+echo "Installing sshkey"
+cd ~
+cd /.ssh
+chmod 600 sshkey
+ssh-add sshkey
+ssh-add -l
+echo "Successfully installed sshkey"
