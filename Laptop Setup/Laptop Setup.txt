@@ -10,6 +10,13 @@ Setup Git and Code Folder
     2. run: chmod +x configure_git.sh
     3. run: ./configure_git.sh
 
+Install Git SSH Key
+---------------------------------------
+    1. Download sshkey from this repo.
+    2. Copy it into the .ssh folder.
+    3. run: chmod 600 sshkey
+    4. run: ssh-add sshkey enter passphrase: "ronskufca"
+
 Configure Alias in .bashrc
 -----------------------------------------------------------------------------------------
     1. Go to terminal.
@@ -25,12 +32,7 @@ Configure Alias in .bashrc
     alias gpsh='git push'
     alias glog="log -20 --pretty=format:'%Cred%h%Creset %C(bold blue)%an%Creset %Cgreen%cr%Creset %s%C(bold red)%d%Creset'"
 
-Install Git SSH Key
----------------------------------------
-    1. Download sshkey from this repo.
-    2. Copy it into the .ssh folder.
-    3. run: chmod 600 sshkey
-    4. run: ssh-add sshkey enter passphrase: "ronskufca"
+
 
 
 Configure Git
