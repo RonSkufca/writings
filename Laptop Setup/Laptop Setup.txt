@@ -1,24 +1,9 @@
-Update your local package index.
-    sudo apt update && sudo apt upgrade
+Install initial applications
+-----------------------------------------
+    1. download install_apps.sh from git
+    2. run: chmod +x install_apps.sh
+    3. run: ./install_apps.sh
 
-Install Firefox
-    firefox --version
-    sudo snap refresh firefox
-
-Install VSCode
-    sudo snap install --classic code
-
-Install Rider
-    sudo snap install rider --classic
-    
-Install Git
-    sudo apt install git
-
-Install Timeshift
-    sudo apt install timeshift
-
-Install Slack
-    sudo snap install slack --classic
 
 Configure Alias in .bashrc
 -----------------------------------------------------------------------------------------
