@@ -25,6 +25,14 @@ Configure Alias in .bashrc
     alias gpsh='git push'
     alias glog="log -20 --pretty=format:'%Cred%h%Creset %C(bold blue)%an%Creset %Cgreen%cr%Creset %s%C(bold red)%d%Creset'"
 
+Install Git SSH Key
+---------------------------------------
+    1. Download sshkey from this repo.
+    2. Copy it into the .ssh folder.
+    3. run: chmod 600 sshkey
+    4. run: ssh-add sshkey enter passphrase: "ronskufca"
+
+
 Configure Git
 -----------------------------------------------------------------------------------------
     Run the following commands
