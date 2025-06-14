@@ -4,6 +4,11 @@ Install initial applications
     2. run: chmod +x install_apps.sh
     3. run: ./install_apps.sh
 
+Setup Git and Code Folder
+-----------------------------------------
+    1. download configure_git.sh from git
+    2. run: chmod +x configure_git.sh
+    3. run: ./configure_git.sh
 
 Configure Alias in .bashrc
 -----------------------------------------------------------------------------------------
