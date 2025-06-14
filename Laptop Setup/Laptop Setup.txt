@@ -22,6 +22,8 @@ Install Slack
 
 Configure Alias in .bashrc
 -----------------------------------------------------------------------------------------
+    1. Go to terminal.
+    2. In the home directory run nano ~/.bashrc
     alias ll='ls -alF'
     alias la='ls -A'
     alias l='ls -CF'
