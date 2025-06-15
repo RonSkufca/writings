@@ -17,6 +17,19 @@ Install Git SSH Key
     3. run: chmod 600 sshkey
     4. run: ssh-add sshkey enter passphrase: "ronskufca"
 
+Install Anki
+---------------------------------------
+    1. Download from https://apps.ankiweb.net
+    2. run: tar xaf anki-25.02.6-linux-qt6.tar.zst (tar xaf is extract a file)
+       new folder anki-25.02.6-linux-qt6 was created
+    3. cd anki-25.02.6-linux-qt6
+    4. run ./anki and you may receive the following error
+        Wayland support is disabled by default due to bugs:
+        https://github.com/ankitects/anki/issues/1767
+        You can force it on with an env var: ANKI_WAYLAND=1
+    5. run ANKI_WAYLAND=1 ./anki
+
+
 Configure Alias in .bashrc
 -----------------------------------------------------------------------------------------
     1. Go to terminal.
