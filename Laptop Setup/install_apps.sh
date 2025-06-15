@@ -31,4 +31,12 @@ sudo apt install -y timeshift
 echo "Installing Slack..."
 sudo snap install slack --classic
 
+# Install Ubuntu .NET backports package repository
+echo "Installing Ubuntu .NET backports package repository"
+sudo add-apt-repository ppa:dotnet/backports
+
+# Install the .NET SDK
+echo "Installing the .NET SDK"
+sudo apt-get install -y dotnet-sdk-9.0
+
 echo "All applications installed successfully!"
