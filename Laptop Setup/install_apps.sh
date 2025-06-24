@@ -36,7 +36,10 @@ echo "Installing Ubuntu .NET backports package repository"
 sudo add-apt-repository ppa:dotnet/backports
 
 # Install the .NET SDK
-echo "Installing the .NET SDK"
+echo "Installing the .NET SDK 9.0"
 sudo apt-get install -y dotnet-sdk-9.0
+
+echo "Installing the .NET SDK 8.0"
+sudo apt-get install -y dotnet-sdk-8.0
 
 echo "All applications installed successfully!"
