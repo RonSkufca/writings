@@ -42,4 +42,7 @@ sudo apt-get install -y dotnet-sdk-9.0
 echo "Installing the .NET SDK 8.0"
 sudo apt-get install -y dotnet-sdk-8.0
 
+echo "Installing Powershell"
+sudo snap install powershell --classic
+
 echo "All applications installed successfully!"
