@@ -45,4 +45,10 @@ sudo apt-get install -y dotnet-sdk-8.0
 echo "Installing Powershell"
 sudo snap install powershell --classic
 
+echo "Installing Npm"
+sudo apt install npm
+
+echo "Installing Curl"
+sudo snap install curl
+
 echo "All applications installed successfully!"
