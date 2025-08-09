@@ -51,8 +51,10 @@ sudo apt install npm
 echo "Installing Curl"
 sudo snap install curl
 
-echo "Installing Node 20"
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash
-sudo apt install -y nodejs
+echo "Installing Node Version Manager"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+echo "Installing Node"
+nvm install 24
 
 echo "All applications installed successfully!"
